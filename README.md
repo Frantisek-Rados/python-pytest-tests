@@ -1,6 +1,7 @@
 # Python pytest testy – QA portfólio
 
-**Autor:** František Radoš
+**Autor:** František Radoš  
+**Dátum:** 2026-06-16
 
 ---
 
@@ -18,3 +19,20 @@
 1. Nainštaluj pytest:
 ```bash
 pip install pytest
+```
+
+2. Nainštaluj requests (pre API testy):
+```bash
+pip install requests
+```
+
+3. Spusti všetky testy:
+```bash
+pytest
+```
+
+Alebo spusti konkrétny súbor:
+```bash
+pytest test_api.py
+```
+
