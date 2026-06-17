@@ -12,6 +12,7 @@
 | `test_prvy.py` | Prvý automatizovaný test (assert 1+1 == 2) |
 | `test_api.py` | API testy s `requests` – GET /posts/1, kontrola statusu a JSON title |
 | `test_parametrizacia.py` | Parametrizovaný test – jeden test, 5 rôznych ID (1, 2, 3, 4, 5) |
+| `test_playwright_uvod.py` | UI test s Playwright – otvorenie stránky, kontrola nadpisu |
 
 ---
 
@@ -37,6 +38,7 @@ Alebo spusti konkrétny súbor:
 pytest test_prvy.py
 pytest test_api.py
 pytest test_parametrizacia.py
+pytest test_playwright_uvod.py
 ```
 
 ---
@@ -46,4 +48,3 @@ pytest test_parametrizacia.py
 Ak máš otázky k tomuto projektu, napíš mi na GitHub.
 
 ```
-
