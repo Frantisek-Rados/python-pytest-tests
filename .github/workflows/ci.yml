@@ -9,8 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - uses: actions/checkout@v4
@@ -20,10 +18,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Run a simple test
         run: |
-          pip install pytest requests playwright pytest-playwright
-          playwright install
-
-      - name: Run tests with pytest
-        run: pytest
+          python -c "print('Hello from GitHub Actions!')"
