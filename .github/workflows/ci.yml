@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run a simple test
+      - name: Install dependencies
         run: |
-          python -c "print('Hello from GitHub Actions!')"
+          pip install pytest
+
+      - name: Run tests with pytest
+        run: pytest
